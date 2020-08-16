@@ -1,0 +1,91 @@
+.overflowVert {
+    height: 60em;
+    overflow-y: scroll;
+}
+
+#map {
+
+    height: 60em;
+    background-color: grey;
+}
+
+.card-header {
+    background-color: #5c348b;
+    color: white;
+}
+
+.card-footer {
+    background-color: #5c348b;
+    color: white;
+}
+
+.card {
+    border: 2px solid #5c348b;
+}
+
+.card-title {
+    color: #5c348b;
+}
+
+
+.custom-select {
+    border: 2px solid #5c348b;
+
+}
+
+.charts {
+    display: none;
+    visibility: hidden;
+}
+
+.show {
+    display: block !important;
+    visibility: visible;
+    transition: all 0.5s ease-in-out;
+}
+
+h1 {
+    color: #5c348b;
+}
+
+.navbar-light .navbar-brand {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #5c348b;
+}
+
+
+.jumbo {
+    color: #5c348b;
+    background-image: url("https://images.squarespace-cdn.com/content/v1/5eccbe4ec6fa01358cfceb8b/1591272361491-8GHCNDLDEZRGE5UXB3C3/ke17ZwdGBToddI8pDm48kN-htAdymLjQqLj1xNdPDecUqsxRUqqbr1mOJYKfIPR7LoDQ9mXPOjoJoqy81S2I8N_N4V1vUb5AoIIIbLZhVYxCRW4BPu10St3TBAUQYVKcyFLSxRNp7HYmw3FiQVBMy2wMVicxDV5zN27vM6qlyRLNujzaaxhrrUDQ-xERJa0F/Artboard+5-100.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+    opacity: 0.9;
+}
+
+
+
+
+.jumbo2 {
+    color: #5c348b;
+    background-image: url("https://scx2.b-cdn.net/gfx/news/hires/2020/busyroad.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 35rem;
+
+}
+
+.jumbo2 .card,
+.jumbo .card {
+    opacity: 0.9;
+}
+
+
+.btn-primary {
+    background-color: #5c348b;
+    border: 1px solid #5c348b;
+    border-radius: 10rem;
+}

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+
+    <script src="https://code.highcharts.com/highcharts-more.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css" />
+    <style>
+    </style>
+  </head>
+
+  <body>
+
+
+
+    <nav class="navbar navbar-light bg-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+    <img src="assets/logg.png" width="40" height="40" class="mr-2 d-inline-block align-top" alt="">
+    Project Resilience
+  </a>
+      </div>
+    </nav>
+
+    <div class="jumbotron jumbo">
+      <div class="container">
+        <div class="col-sm-6 mt-5 card p-3">
+          <h1 class="display-5">Are we Resilient ?</h1>
+          <blockquote class="blockquote">Australians are some of the most resilient people on Earth. Having gone through difficult socio,economic disasters we have still made it and prospered with it. But everyone has a different coping mechanism to deal financial, mental and physical
+            stress.
+          </blockquote>
+          <blockquote class="blockquote">
+            Project Resilience makes an effort to uncover how can we bounce back <b>together</b> from our hardships and be back on tracks - Stronger than ever ! After all we all are proud <b>Australians</b>
+          </blockquote>
+        </div>
+      </div>
+    </div>
+
+    <h1></h1>
+
+
+
+    <div class="container mb-5">
+      <div class="row my-3">
+        <div class="col">
+          <h2>Australians</h2>
+          <blockquote class="blockquote">With vast lands and deep blue seas, Australians are quite different when we move around within the country</blockquote>
+          <blockquote class="blockquote">We have broken down our project in <b>councils </b>. It is important to understand our people if we want to help them in their well being.</blockquote>
+        </div>
+        <div class="col">
+
+          <img class="img img-fluid" src="https://cdn.shopify.com/s/files/1/0079/3513/1766/products/australia-195246_1920_1618x.jpg?v=1534224921"></img>
+
+
+        </div>
+
+      </div>
+      <div class="card text-center card-header p-5 mt-5">
+        <h2 class="">Select a council from the dropdown (for example Liverpool City council) to start the Journey</h2>
+        <select class=" mt-3  custom-select form-control-lg" id="councils">
+
+      </select>
+      </div>
+    </div>
+
+
+    <div class="charts ">
+
+
+
+
+      <div class="container mt-3">
+        <div class="jumbotron">
+          <div class="row">
+            <div class="col-sm-6">
+              <img src="https://www.abc.net.au/radionational/image/4779826-3x2-700x467.jpg" class="img img-fluid"></img>
+            </div>
+            <div class="col-sm-6">
+              <h2>
+                Social Fabric
+              </h2>
+              <p>
+                Australia has been a melting pot of different cultures with migrant communities from various countries living in a healthy and thriving society.
+              </p>
+              <p>
+                Every community has a different socio-economic structure and so have different mechanisms to cope with challenges. It is important to understand the make-up of our community in order for governments to assist in difficult times.
+              </p>
+              <p>
+                Below data captures the demographics based on their country of birth .
+              </p>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-sm-6" id="container7"></div>
+
+            <div class="col-sm-6">
+              <div class="card" style="min-height:25rem;">
+                <div class="card-header text-center text-white">
+                  <h3>Demographics in this council </h3>
+                </div>
+                <div class="card-body  text-center ">
+                  <h4 id="totalMig"></h4>
+                </div>
+                <div class="card-footer text-white text-center"><small>Based on data from ATO on diversity</small></div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+        <div class="card p-4">
+          <div class="row">
+
+            <div class="col-sm-6">
+              <h2>
+                Impacts
+              </h2>
+              <p>
+                Some of the major impacts of COVID19 and Bushfires have on Australians in those councils are to do with financial stress
+              </p>
+              <p>
+                Gvovernment provided support in the form of Jobkeeper . Some of the postcodes are more impacted than others
+              </p>
+              <p>
+                Below data captures the Jobkeeper by Post code in this council.
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <img src="https://www.baysidegroup.com.au/blog/wp-content/uploads/2020/04/BG-JobKeeper-Payment-Blog-Resize.jpg" class="img img-fluid"></img>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-sm-12" id="container3"></div>
+
+
+
+          </div>
+        </div>
+
+
+
+
+
+        <div class="jumbotron mt-4">
+          <div class="row">
+            <div class="col-sm-6">
+              <img src="https://i.guim.co.uk/img/media/614733715c78aa4702c82afbc3254df7dd6cbe6e/0_51_3000_1801/master/3000.jpg?width=1200&height=900&quality=85&auto=format&fit=crop&s=fff35e0c8edddd8c1a93fa2115b9f529" class="img img-fluid"></img>
+            </div>
+            <div class="col-sm-6">
+              <h2>
+                Umemployment - some groups are more impacted than others
+              </h2>
+              <p>
+                We started diving deep to understand the unemployment rate and Jobseeker to find answers to which particular groups in this council are most vulnerable and are the ones who need most support
+              </p>
+              <p>
+                Below data captures the Jobseeker based on the gender and age group .
+              </p>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-sm-6" id="container6"></div>
+
+            <div class="col-sm-6" id="container4">
+
+            </div>
+
+          </div>
+        </div>
+
+
+
+
+
+        <div class="card p-4">
+          <div class="row">
+
+            <div class="col-sm-6">
+              <h2>
+                Mental Health and Crime
+              </h2>
+              <p>
+                A deep financial stress and recession with people locked down , has tremendous impact on well being of people
+              </p>
+              <p>
+                Combined with Alcohol and drugs , this has proven to aggravate and often leading to criminal behaviour in most people.
+              </p>
+              <p>
+                Below are the number of Liquor Licenses operating in this council VS ranking in Domestic violence cases.
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <img src="https://www.baysidegroup.com.au/blog/wp-content/uploads/2020/04/BG-JobKeeper-Payment-Blog-Resize.jpg" class="img img-fluid"></img>
+            </div>
+          </div>
+
+
+          <div class=" row  my-5">
+            <div class="col-sm-6">
+
+              <div class="card">
+                <div class="card-header text-center text-white">
+                  <h3> Total number of liquor licenses issued in this council</h3>
+                </div>
+                <div class="card-body text-center ">
+
+                  <h1 id="totalApps"></h1>
+                </div>
+                <div class="card-footer text-white text-center"><small>Based on NSW Liquor and Gaming data</small></div>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="card">
+                <div class="card-header text-center text-white">
+                  <h3> Ranking amongst 256 NSW councils in Domestic violence crimes </h3>
+                </div>
+                <div class="card-body  text-center ">
+                  <h1 id="totalCnr"></h1>
+                </div>
+                <div class="card-footer text-white text-center"><small>Based on data from BOCSAR </small></div>
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="row mt-3">
+
+
+            <div class="col-sm-6">
+
+              <img src="https://s3.eu-central-1.amazonaws.com/lillypad-eu/WP/wp-content/uploads/Diabetes-empowerment.jpg" class="img img-fluid"></img>
+
+
+            </div>
+            <div class="col-sm-6">
+              <h2>Are we improving ?</h2>
+              <p>It is however important to deep dive even more in data and try to understand the trend. ALthough the council might rank higher but it is the <b>trend</b> that matters most</p>
+              <p>This is proof of how much efforts our community had been putting to fight the domestic violence</p>
+
+            </div>
+
+
+
+          </div>
+
+          <div class="row mt-2">
+            <div class="col-sm-6 " id="container8"></div>
+
+            <div class="col-sm-6">
+              <div class="card " style="min-height:20rem;">
+                <div class="card-header text-center text-white">
+                  <h3>Domestic Violence - How well are we doing ?</h3>
+                </div>
+                <div class="card-body  text-center ">
+                  <h4 id="totalCrm"></h4>
+                </div>
+                <div class="card-footer text-white text-center"><small>Based on BOCSAR data</small></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+
+
+
+
+
+
+
+        <div class="jumbotron mt-4 jumbo2">
+
+          <div class="col-sm-6">
+            <div class="card p-4">
+
+              <h2> Raod to Recovery</h2>
+              <ul>
+
+                <li>
+                  <h4>Where should we go from here ?</h4>
+
+                </li>
+
+                <li>
+                  <h4>How does the recovery look like ?</h4>
+
+                </li>
+
+                <li>
+                  <h4>Where should the councils focus most to assist with recovery</h4>
+
+                </li>
+              </ul>
+
+            </div>
+
+
+          </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        <div class="jumbotron">
+          <div class="row text-center">
+            <h2>Biggest sector : Construction</h2>
+            <blockquote class=" blockquote">We looked in the industry data to understand which industry could help with the financial recovery the most. </blockquote>
+
+          </div>
+
+          <div class="row " id="container9"></div>
+
+        </div>
+
+
+
+
+
+
+
+        <div class="card p-4">
+          <div class="row">
+
+            <div class="col-sm-6">
+              <h2>
+                Targeting the construction industry
+              </h2>
+              <blockquote class="blockquote">
+                Construction industry employed roughly twice as many people as any other industry of equal size. If the councils invest more in construction sector by <b>Fast tracking project</b> .It will have the single biggest impact on jobs and financial
+                well being of people.
+              </blockquote>
+            </div>
+            <div class="col-sm-6">
+
+              <img src="https://www.canberrabusiness.com/wp-content/uploads/2020/05/yancy-min-EzSyFRfNP_c-unsplash-1024x683.jpg" class="img img-fluid"></img>
+            </div>
+
+          </div>
+          <div class="row">
+            <h4 class="my-4"> All the development projects currently ongoing in the council along with their statuses</h4>
+            <div class="col-sm-8">
+              <div id="map">
+
+              </div>
+
+
+            </div>
+            <div class="col-sm-4">
+
+
+              <div class="row">
+
+                <div id="markers"></div>
+
+
+                <div class="col-sm-6 ">
+                  <select class="custom-select" id="status">
+
+
+              </select>
+                </div>
+
+              </div>
+              <div class="row">
+
+                <div id="daDesc">
+
+                  <div class="spinner-border text-primary show" role="status"><span class="sr-only">Loading...</span> </div>
+
+
+                </div>
+
+              </div>
+
+
+
+            </div>
+
+
+          </div>
+
+        </div>
+
+
+
+        <div class="row p-4">
+
+          <div class="col-sm-6">
+            <h2>
+              Mental health and well being
+            </h2>
+            <p>
+              Some of the major impacts of COVID19 and Bushfires have on Australians in those councils is around mental stress
+            </p>
+            <p>
+              It is important for all of us Australians to look after our mates and to also reach out to them if we need help
+            </p>
+            <p>
+              A lot of young people are not comfortable reaching out to community support and feel embarrassed in asking support
+            </p>
+            <p> We have developed a <b>Friends Anonymous</b> text messaging application based on Telstra Messaging API.
+            </p>
+            <a href="message/index.php" class="btn btn-lg btn-primary ">Visit the Application</a>
+          </div>
+          <div class="col-sm-6">
+            <img src="https://schools.au.reachout.com/-/media/schools/images/legacy-articles/r-u-ok-logo.png" class="img img-fluid"></img>
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col-sm-12" id="container3"></div>
+
+
+
+        </div>
+
+
+
+
+
+
+      </div>
+    </div>
+
+  </body>
+  <footer class="footer py-4 bg-light  border-top text-center">
+    <div class="container">
+
+      <div class="col-sm-12">
+        <!--<h4 class="text-uppercase mb-4">About Freelancer</h4>-->
+        <h4>Made with <span style="color: #e25555;">&#9829;</span> by SwitchCase for Govhack'20
+          <!--<a href="http://startbootstrap.com">Start Bootstrap</a>.-->
+        </h4>
+      </div>
+
+
+
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script type="text/javascript" src="js/script.js"></script>
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+  <script type="text/javascript" src="js/theme.js"></script>
+  <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js"></script>
+
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwLt0LdduwcnM1XmkD1R2xeLCaqyNR5tA">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</html>
