@@ -11,6 +11,7 @@ class Telstra {
         "url"  => "https://tapi.telstra.com",
         "prov" => "/v2/messages/provisioning/subscriptions",
         "send" => "/v2/messages/sms",
+        "bnum" => "/v2/messages/freetrial/bnum"
       )
   );
 
@@ -40,6 +41,13 @@ class Telstra {
 
       if($token) return $this->_curl($this->urls['sms']['url'].$this->urls['sms']['send'], $options, $token);
       else return "there has been an error";
+  }
+
+  public function bnumreg($options = []){
+    $token = $this->tokenauth(array('grant_type' => 'client_credentials', 'scope' => 'NSMS'));
+
+    if($token) return $this->_curl($this->urls['sms']['url'].$this->urls['sms']['bnum'], $options, $token);
+    else return "there has been an error";
   }
 
   private function _curl($url, $values, $token = array()) {

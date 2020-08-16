@@ -6,21 +6,29 @@ error_reporting(E_ALL);
 require 'includes/config.php';
 require 'includes/telstra.php';
 
-$telstra = new telstra($config);
+$bnumoptions = ['bnum' => [
+ '+61435128190',
+ '+61416932514',
+ '+61400198449',
+ '+61406942131',
+ '+61434724363',
+ ],
+ ];
 
+$telstra = new telstra($config);
+$bnumcheck = $telstra->bnumreg($bnumoptions);
 if ($_POST['mobile']) {
     $prov = $telstra->provision();
-
     if (!empty($prov)) {
         $result = $telstra->sendsms([
-    'to' => $_POST['mobile'],
-    'body' => $_POST['body'],
-    'from' => 'A new anonymous friend',
-    'validity' => 1,
-    'scheduledDelivery' => 1,
-    'notifyURL' => '',
-    'replyRequest' => false,
-  ]);
+ 'to' => '+61400198449',
+ 'body' => $_POST['body'],
+ 'from' => $_POST['mobile'],
+ 'validity' => 1,
+ 'scheduledDelivery' => 1,
+ 'notifyURL' => '',
+ 'replyRequest' => false,
+ ]);
 
         foreach ($result['messages'] as $sms) {
             if ('MessageWaiting' == $sms['deliveryStatus']) {
